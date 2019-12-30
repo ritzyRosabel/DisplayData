@@ -17,9 +17,53 @@ namespace DisplayView.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            List<Test> list = new List<Test>
+            {
+                new Test
+                    {
+                      Age=24,
+                      Id=31,
+                      Name = "kolawole Otumba"
+                     },  
+                new Test
+                    {
+                      Age=24,
+                      Id=31,
+                      Name = "kolawole Otumba"
+                     },
+                new Test
+                    {
+                      Age=24,
+                      Id=31,
+                      Name = "kolawole Otumba"
+                     },
+                new Test
+                    {
+                      Age=24,
+                      Id=31,
+                      Name = "kolawole Otumba"
+                     },
+                new Test
+                    {
+                      Age=24,
+                      Id=31,
+                      Name = "kolawole Otumba"
+                     },
+                new Test
+                    {
+                      Age=24,
+                      Id=31,
+                      Name = "kolawole Otumba"
+                     },
+                new Test
+                    {
+                      Age=24,
+                      Id=31,
+                      Name = "kolawole Otumba"
+                     }
+            };
 
-            return View();
+            return View(list);
         }
 
         public ActionResult Contact()
