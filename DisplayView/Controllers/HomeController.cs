@@ -81,6 +81,12 @@ namespace DisplayView.Controllers
             var result = GetData.GetTest();
             ViewData["result"] = result;
             return View();
+        }  
+        public ActionResult GetAllData()
+        {
+            var result = GetData.GetTest();
+            ViewBag.test = result;
+            return View();
         }
     }
 }
