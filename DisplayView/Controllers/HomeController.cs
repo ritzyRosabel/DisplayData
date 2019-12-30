@@ -76,5 +76,11 @@ namespace DisplayView.Controllers
             };
             return View(test);
         }
+        public ActionResult GetDataFromDB()
+        {
+            var result = GetData.GetTest();
+            ViewData["result"] = result;
+            return View();
+        }
     }
 }
