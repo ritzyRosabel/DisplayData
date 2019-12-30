@@ -68,9 +68,13 @@ namespace DisplayView.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            Test test = new Test
+            {
+                Age = 24,
+                Id = 31,
+                Name = "kolawole Otumba"
+            };
+            return View(test);
         }
     }
 }
