@@ -84,8 +84,14 @@ namespace DisplayView.Controllers
         } 
         public ActionResult GetDataFromDBUsingTempData()
         {
-            var result = GetData.GetTest();
-            TempData["result"] = result;
+            var answer = GetData.GetTest();
+            TempData["ans"] = answer;
+            return View();
+        }   
+        public ActionResult SecondGetDataFromDBUsingTempData()
+        {
+            // var result = GetData.GetTest();
+            ViewBag.result = TempData["ans"];
             return View();
         }  
         public ActionResult GetAllData()
