@@ -175,6 +175,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\GetDataFromDB.cshtml" />
     <Content Include="Views\Home\GetAllData.cshtml" />
+    <Content Include="Views\Home\GetDataFromDBUsingTempData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

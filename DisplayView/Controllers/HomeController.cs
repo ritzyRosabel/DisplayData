@@ -81,6 +81,12 @@ namespace DisplayView.Controllers
             var result = GetData.GetTest();
             ViewData["result"] = result;
             return View();
+        } 
+        public ActionResult GetDataFromDBUsingTempData()
+        {
+            var result = GetData.GetTest();
+            TempData["result"] = result;
+            return View();
         }  
         public ActionResult GetAllData()
         {
